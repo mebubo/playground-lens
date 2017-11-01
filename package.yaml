@@ -1,0 +1,15 @@
+name: playground-lens
+
+dependencies:
+    - base
+
+library:
+    source-dirs: src
+
+executables:
+    main:
+        main: Main.hs
+        source-dirs: app
+        dependencies:
+            - playground-lens
+            - lens
