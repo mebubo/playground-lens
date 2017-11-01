@@ -21,7 +21,7 @@ instance Functor Id where
     fmap f (Id a) = Id (f a)
 
 over :: Lens s t a b -> (a -> b) -> s -> t
-over l f = getId . l (fmap f . Id)
+over l f = getId . l (Id . f)
 
 set :: Lens s t a b -> b -> s -> t
 set l = over l . const
