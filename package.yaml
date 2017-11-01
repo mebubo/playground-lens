@@ -12,4 +12,3 @@ executables:
         source-dirs: app
         dependencies:
             - playground-lens
-            - lens

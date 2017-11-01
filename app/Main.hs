@@ -1,7 +1,6 @@
 module Main where
 
 import Lens
-import Control.Lens (view, set, over)
 
 main :: IO ()
 main = do
